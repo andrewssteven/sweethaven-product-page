@@ -6,6 +6,7 @@
 
 body{
     background-color: aliceblue;
+    color: black;
     overflow-x: hidden;
 }
 
@@ -18,6 +19,15 @@ button{
     cursor: pointer;
     border-radius: 6px;
     border: none;
+    background-color: #8b5e34;
+    color: white;
+}
+
+button:hover{
+    border: solid 1.5px #8b5e34;
+    background-color: white;
+    color: #8b5e34;
+    transition: all 10ms ease-in-out;
 }
 
 #brandName{
@@ -70,9 +80,41 @@ nav li{
     list-style: none;
 }
 
+nav li:hover{
+    color: #8b5e34;
+    text-decoration: underline;
+    transition: all 10ms ease-in-out;
+}
+
 nav a{
     text-decoration: none;
     color: black;
+}
+
+.menuSlide{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.80);
+    width: 80%;
+    display: none;
+    margin-top: 45px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+
+.menuSlide{
+    text-align: right;
+    padding-right:  30px;
+}
+
+.menuslideLink{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuSlide li{
+    font-size: 30px;
 }
 
 .menu{
@@ -101,6 +143,7 @@ nav a{
     min-height: 300px;
     position: relative;
 }
+
 .heroContent{
     inset: 0;
     background-color: rgba(224, 235, 235, 0.224);
@@ -115,7 +158,7 @@ nav a{
 .productSection{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .productCard{
@@ -144,12 +187,11 @@ nav a{
     margin-top: 4px;
 }
 
-
 .productCard button{
     width: 100%;
 }
 
-.ourStory {
+.ourStory{
     display: grid;
     grid-template-columns: 55% 45%;
     gap: 10px;
@@ -172,10 +214,18 @@ nav a{
     background-color: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
-.ourStory img, .specialOffers img{
+
+.ourStory img{
     max-height: 140px;
     border-radius: 10px;
     width: 100%;
+}
+
+.specialOffers img{
+    max-height: 145px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .specialOffers{
@@ -220,12 +270,17 @@ nav a{
     border: solid 2px rgb(204, 114, 86);
     background-color: rgba(204, 114, 86, 0.20);;
     display: flex;
+    min-height: 70px;
     padding: 30px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+}
+
+.contactCard i{
+    font-size: 20px;
 }
 
 #contact form{
@@ -236,7 +291,8 @@ nav a{
     background-color: white;
     min-height: 250px;
     margin: 30px auto;
-    max-width: 500px;
+    max-width: 700px;
+    min-height: 300px;
     padding: 20px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
@@ -248,8 +304,6 @@ nav a{
     border: none;
     outline: solid 1px rgba(128, 128, 128, 0.80);
 }
-
-
 
 .input1{
     display: grid;
@@ -288,11 +342,11 @@ nav a{
     justify-content: center;
 }
 
-.joincircleright .subscribe{
+.subscribe{
     background-color: rgb(95, 209, 95);
     color: white;
-    font-weight: 600;
-   
+    border: none;
+    font-weight: 600; 
 }
 
 .joincircleInput input{
@@ -316,7 +370,6 @@ nav a{
 
 .joinCircle img{
     max-height:300px ;
-
 }
 
 footer{
@@ -326,7 +379,6 @@ footer{
     padding: 40px;
     background-color: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-
 }
 
 footer ul{
@@ -454,6 +506,9 @@ footer h2{
     .joinCircle{
         grid-template-columns: 1fr;
     }
+    .joincircleright{
+    gap: 10px;
+}   
     .joincircleRT{
     grid-row: 1;
     }
@@ -465,3 +520,4 @@ footer h2{
         grid-row: 2;
     }
 }
+
