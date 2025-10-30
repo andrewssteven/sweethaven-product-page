@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+body{
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+main > *{
+    margin: 30px 35px;
+}
+
+button{
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+#brandName{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.brandName{
+    font-size: larger;
+    font-style: italic;
+    text-shadow: 0px 0px 1px rgba(255, 0, 0, 0.664);
+
+}
+
+.brandIcon{
+    color: red;
+    font-weight: 400;
+    font-size:30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: solid 2px rgba(137, 68, 68, 0.696);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.mobileMenu{
+    display:none;
+}
+
+.navCart{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 30px;
+}
+
+#hero{
+    background-image: url(/assets/Assorted\ pastries\ and\ desserts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 45px 0;
+    min-height: 300px;
+    position: relative;
+}
+.heroContent{
+    inset: 0;
+    background-color: rgba(224, 235, 235, 0.224);
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.productCard{
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.438);
+}
+
+.productCard img{
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px 7px 0 0;
+}
+
+.productCardB {
+    padding: 10px;
+}
+.productCardB > *{
+    margin-top: 10px;
+}
+
+.productcardT{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+
+.productCard button{
+    width: 100%;
+}
+
+.ourStory {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 10px;
+}
+
+.ourstoryright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ourstoryLeft{
+    padding: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.ourStory img, .specialOffers img{
+    max-height: 140px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.specialOffers{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.specialofferCard{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.specialofferCard > *, #delightfulMenu > *{
+    margin-top: 10px;
+}
+
+.specialOffertag{
+    background-color: orange;
+    text-align: center;
+    font-weight: 500;
+    padding: 6px;
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+.specialofferPrice{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contactSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.contactCard{
+    border: solid 2px rgb(204, 114, 86);
+    background-color: rgba(204, 114, 86, 0.20);;
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact form{
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    min-height: 250px;
+    margin: 30px auto;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+#contact textarea{
+    border-radius: 6px;
+    caret-color: #513c20;
+    padding: 6px; 
+    border: none;
+    outline: solid 1px rgba(128, 128, 128, 0.80);
+}
+
+
+
+.input1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.input1 input{
+    width: 90%;
+    caret-color: #513c20;
+    min-height: 30px;
+    border-radius: 6px;
+    padding-left: 6px; 
+    border: none;
+    outline: solid 1px rgba(128, 128, 128, 0.80);
+}
+
+.input1 input:focus, #contact textarea:focus{
+     outline: solid 1.5px #8d632bc6;
+} 
+
+.joinCircle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #8b5e34, #4b2e05, #513c20);
+}
+
+.joincircleright{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    gap: 10px;
+    justify-content: center;
+}
+
+.joincircleright .subscribe{
+    background-color: rgb(95, 209, 95);
+    color: white;
+    font-weight: 600;
+   
+}
+
+.joincircleInput input{
+    border: none;
+    outline: none;
+    caret-color: rgb(96, 96, 231);
+}
+
+.joincircleInput{
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.joincircleRT{
+    display: flex; 
+    justify-content: center;
+}
+
+.joinCircle img{
+    max-height:300px ;
+
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+footer ul{
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+footer li{
+    list-style: none;
+    width: fit-content;
+    text-align: start;
+}
+
+footer li:hover{
+    text-decoration: underline;
+    transform: translateX(10px);
+    transition: all 10ms ease-in-out;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footerabout > *{
+    margin-top: 5px;
+}
+
+.footerInput{
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer input{
+    border: none;
+    outline: none;
+    caret-color: rgb(96, 96, 231);
+}
+
+footer h2{
+    margin-bottom: 5px;
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socials{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.socials i{
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.socials i:hover{
+    font-size: 17px;
+    background-color: rgb(81, 153, 215);
+    color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+}
+
+
+
+/* responsiveness */
+@media (max-width: 600px){
+    main > *{
+    margin: 20px;
+    }
+    #hero{
+    margin: 45px 0 10px 0;
+    min-height: 300px;
+    position: relative;
+    }
+    nav .brandName, .navCart, .navLink{
+        display: none;
+    }
+    .menu{
+        gap: 10px;
+        margin-right: 20px;
+    }
+    .mobileMenu{
+        display: block;
+    }
+    .mobileMenu i{
+    font-size: 30px;
+    }
+    .heroContent h1{
+        text-align: center;
+    }
+    .productSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ourStory {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+    .ourstoryright{
+    grid-row: 1;
+    }
+    .specialOffers{
+        grid-template-columns: 1fr;
+    }
+    .contactSection{
+        grid-template-columns: 1fr;
+    }
+    .input1{
+        grid-template-columns: 1fr;
+    }
+    .input1 input{
+        width: 100%;
+    }
+    .joinCircle{
+        grid-template-columns: 1fr;
+    }
+    .joincircleRT{
+    grid-row: 1;
+    }
+    footer{
+    grid-template-columns: 1fr;
+    padding: 10px 20px;
+    }
+    .footNewletter{
+        grid-row: 2;
+    }
+}
